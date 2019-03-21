@@ -10,7 +10,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"/>
+    <script type="text/javascript">
+        var slideIndex = [1,1];
+    /* Class the members of each slideshow group with different CSS classes */
+    var slideId = ["mySlides1", "mySlides2"] 
+    showSlides(1, 0);
+    showSlides(1, 1);
     
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1} 
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      x[slideIndex[no]-1].style.display = "block"; 
+    }
+    </script>
 </head>
 <body>
     <div class="img" id="leftHand">
@@ -35,8 +56,8 @@
             </nav>
         </header>
         <section class="home">
-            <h4>Hi there</h4><br>
-            <h1>Rachel Wong</h1>
+            <h4>Hi there</h4>
+            <h1>RachelWong</h1>
         </section>
         <section class="app" id="app1">
             <h4>Project</h4>
@@ -44,6 +65,17 @@
         </section>
         <section class="slideshow" id="slide-left">
             <h2>Slide Show Left</h2>
+            <div class="mySlides1 fade">
+                <img src="img/crowd.png" style="width:100%;"/>
+            </div>
+            <div class="mySlides1 fade">
+                <img src="img/boatstruck.png" style="width:100%;" />
+            </div>
+            <div class="mySlides1 fade">
+                <img src="img/drawingGirl.png" style="width:100%;" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
         
         <section class="app" id="app2">
@@ -56,6 +88,7 @@
         <section class="article">
             <h4>Written Word</h4>
             <h2><a href="#">LevelUp: Beyond the Code</a></h2>
+            <p>A weekend away with Thoughtworks</p>
         </section>
         <section class="jobtitle">
             <h4>My Jam</h4>
@@ -85,4 +118,5 @@
         <img src="img/squid.png" />
     </div>
 </body>
+
 </html>

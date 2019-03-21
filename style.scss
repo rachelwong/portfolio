@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction:column;
+    text-align:center;
 }
 
 * {box-sizing:border-box;}
@@ -37,6 +38,7 @@ h4{
     text-decoration:underline;
     font-weight:800;
     letter-spacing: 1px;
+    line-height:0;
 }
 
 a, a:active, a:target, a:visited{
@@ -91,12 +93,19 @@ section:hover{
 
 .slideshow{
     background:lightblue;
+    overflow:hidden;
 }
 
 .home{
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     background:cornflowerblue;
+}
+
+.home > h1{
+    font-family: 'Roboto Slab', serif;
+    font-size:3rem;
+    font-weight:700;
 }
 
 #app1{
@@ -131,7 +140,7 @@ section:hover{
 }
 
 #app3{
-    
+    @include center
     grid-row: 5 / 7;
     grid-column: 6 / 7;
 }
@@ -190,3 +199,37 @@ section:hover{
     right:0;
     bottom:0;
 }
+
+/** Image Slider **/
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
