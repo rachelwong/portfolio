@@ -10,28 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"/>
-    <script type="text/javascript">
-        var slideIndex = [1,1];
-    /* Class the members of each slideshow group with different CSS classes */
-    var slideId = ["mySlides1", "mySlides2"] 
-    showSlides(1, 0);
-    showSlides(1, 1);
-    
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
-    }
-    
-    function showSlides(n, no) {
-      var i;
-      var x = document.getElementsByClassName(slideId[no]);
-      if (n > x.length) {slideIndex[no] = 1} 
-      if (n < 1) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-      }
-      x[slideIndex[no]-1].style.display = "block"; 
-    }
-    </script>
 </head>
 <body>
     <div class="img" id="leftHand">
@@ -45,39 +23,53 @@
     </div>
     <div class="container">
         <header class="header">
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <nav>
                 <ul class="navlist">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Mental Health Diary</a></li>
-                    <li><a href="#">Banking App</a></li>
-                    <li><a href="#">Monster Smash Game</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Twitter</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <section class="home">
-            <h4>Hi there</h4>
-            <h1>RachelWong</h1>
+            <p>Hi there</p>
+            <p>Rachel</p>
+            <p>Wong</p>
         </section>
         <section class="app" id="app1">
             <h4>Project</h4>
-            <h2><a href="#">Monster Smash Console Game</a></h2>
+            <h2><a href="#" class="app1-open">Monster Smash Console Game</a></h2>
         </section>
+        <div id="popover">
+        <section class="leftText" id="app1_txt">
+            <a href="#" class="app1-close"><h1 style="color:white;">x</h1></a>
+            <p>This is text for Console game</p>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl nisi. Mauris quis laoreet velit. Pellentesque vel sapien eleifend, rutrum enim ac, mattis ante. Cras venenatis, risus id varius aliquam, neque orci congue dolor, at efficitur elit arcu ac purus. Aliquam maximus sodales libero accumsan aliquam. Aenean sed mauris nec metus auctor ultricies. Sed maximus purus eget odio placerat, vitae ultrices nulla suscipit. Nunc ut neque tellus. Etiam dictum nisl ipsum, at tempus dui eleifend eu. Aliquam bibendum vitae tellus nec porttitor. Aenean porttitor in arcu eget vehicula. Nulla volutpat elementum lectus, nec efficitur elit suscipit tempor. Donec iaculis tellus at purus luctus hendrerit. Etiam ornare turpis nec nisl volutpat feugiat.
+            </p>
+            <p>
+                    Fusce congue ut risus id fermentum. Maecenas non nisi porttitor, molestie mauris et, laoreet felis. Vestibulum ac purus et justo aliquam ullamcorper tristique at enim. Praesent tristique et velit id euismod. Nulla eget enim ac lectus ullamcorper aliquet. Morbi tincidunt sollicitudin dignissim. Nunc nisi quam, placerat tempus sem vel, blandit vulputate ligula. Ut id neque enim. Donec efficitur eros diam, ut eleifend magna pretium at. Donec quis dui nec ligula commodo feugiat. Sed convallis turpis leo. Nulla elementum tortor ex, id aliquet magna varius eget.
+            </p>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl nisi. Mauris quis laoreet velit. Pellentesque vel sapien eleifend, rutrum enim ac, mattis ante. Cras venenatis, risus id varius aliquam, neque orci congue dolor, at efficitur elit arcu ac purus. Aliquam maximus sodales libero accumsan aliquam. Aenean sed mauris nec metus auctor ultricies. Sed maximus purus eget odio placerat, vitae ultrices nulla suscipit. Nunc ut neque tellus. Etiam dictum nisl ipsum, at tempus dui eleifend eu. Aliquam bibendum vitae tellus nec porttitor. Aenean porttitor in arcu eget vehicula. Nulla volutpat elementum lectus, nec efficitur elit suscipit tempor. Donec iaculis tellus at purus luctus hendrerit. Etiam ornare turpis nec nisl volutpat feugiat.
+            </p>
+            <p>
+                    Fusce congue ut risus id fermentum. Maecenas non nisi porttitor, molestie mauris et, laoreet felis. Vestibulum ac purus et justo aliquam ullamcorper tristique at enim. Praesent tristique et velit id euismod. Nulla eget enim ac lectus ullamcorper aliquet. Morbi tincidunt sollicitudin dignissim. Nunc nisi quam, placerat tempus sem vel, blandit vulputate ligula. Ut id neque enim. Donec efficitur eros diam, ut eleifend magna pretium at. Donec quis dui nec ligula commodo feugiat. Sed convallis turpis leo. Nulla elementum tortor ex, id aliquet magna varius eget.
+            </p>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl nisi. Mauris quis laoreet velit. Pellentesque vel sapien eleifend, rutrum enim ac, mattis ante. Cras venenatis, risus id varius aliquam, neque orci congue dolor, at efficitur elit arcu ac purus. Aliquam maximus sodales libero accumsan aliquam. Aenean sed mauris nec metus auctor ultricies. Sed maximus purus eget odio placerat, vitae ultrices nulla suscipit. Nunc ut neque tellus. Etiam dictum nisl ipsum, at tempus dui eleifend eu. Aliquam bibendum vitae tellus nec porttitor. Aenean porttitor in arcu eget vehicula. Nulla volutpat elementum lectus, nec efficitur elit suscipit tempor. Donec iaculis tellus at purus luctus hendrerit. Etiam ornare turpis nec nisl volutpat feugiat.
+            </p>
+            <p>
+                    Fusce congue ut risus id fermentum. Maecenas non nisi porttitor, molestie mauris et, laoreet felis. Vestibulum ac purus et justo aliquam ullamcorper tristique at enim. Praesent tristique et velit id euismod. Nulla eget enim ac lectus ullamcorper aliquet. Morbi tincidunt sollicitudin dignissim. Nunc nisi quam, placerat tempus sem vel, blandit vulputate ligula. Ut id neque enim. Donec efficitur eros diam, ut eleifend magna pretium at. Donec quis dui nec ligula commodo feugiat. Sed convallis turpis leo. Nulla elementum tortor ex, id aliquet magna varius eget.
+            </p>
+        </section>
+        </div>
         <section class="slideshow" id="slide-left">
             <h2>Slide Show Left</h2>
-            <div class="mySlides1 fade">
-                <img src="img/crowd.png" style="width:100%;"/>
-            </div>
-            <div class="mySlides1 fade">
-                <img src="img/boatstruck.png" style="width:100%;" />
-            </div>
-            <div class="mySlides1 fade">
-                <img src="img/drawingGirl.png" style="width:100%;" />
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
-        
         <section class="app" id="app2">
                 <a href="#"><h4>Project</h4>
             <h2>Mental Health Diary App</h2></a>
@@ -90,8 +82,9 @@
             <h2><a href="#">LevelUp: Beyond the Code</a></h2>
             <p>A weekend away with Thoughtworks</p>
         </section>
-        <section class="jobtitle">
-            <h4>My Jam</h4>
+        <section class="app" id="app3">
+            <h4>Project</h4>
+            <h2>Banking App</h2>
         </section>
         <section class="email">
             <a href="#"><i class="fas fa-envelope-open-text"></i></a>
@@ -105,9 +98,9 @@
         <section class="pinterest">
             <a href="#"><i class="fab fa-pinterest"></i></a>
         </section>
-        <section class="app" id="app3">
-            <h4>Project</h4>
-            <h2>Banking App</h2>
+        <section class="job">
+            <h4>Pixel</h4>
+            <h4>Pusher</h4>
         </section>
         <section class="comm">
             <h4>Talk to me</h4>
@@ -117,6 +110,23 @@
     <div class="img" id="squid">
         <img src="img/squid.png" />
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+            $('.app1-open').click(function(){
+                $('.leftText').addClass('active')
+            })
+            $('.app1-close').click(function(){
+                $('.leftText').removeClass('active')
+            })
+        })
+    </script>
+
 </body>
 
 </html>
