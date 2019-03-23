@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@font-face {
+  font-family: "CircularStd-Bold";
+  src: url("./fonts/circularStd-Bold.woff") format("woff");
+}
+
 /* Base Reset */
 * {
   -webkit-box-sizing: border-box;
@@ -13,7 +17,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul,
@@ -25,14 +29,16 @@ li {
 section,
 nav {
   border: 4px solid black;
+  font-family: "CircularStd-Bold";
 }
 
 section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -45,15 +51,21 @@ section {
 
 h1, h2, h4, p, br {
   padding: 0 !important;
-  line-height: 1.7rem;
+  line-height: 2rem;
   margin: 0 !important;
+  font-family: "CircularStd-Bold";
 }
 
 h4 {
   text-transform: uppercase;
-  text-decoration: underline;
-  font-weight: 800;
+  border-bottom: 3px solid black;
   letter-spacing: 1px;
+  font-size: 1rem;
+  font-family: "CircularStd-Bold";
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a,
@@ -63,6 +75,7 @@ a:visited {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  font-family: "CircularStd-Bold";
 }
 
 nav ul {
@@ -80,41 +93,167 @@ nav ul {
 
 nav ul li {
   width: auto;
-  border-bottom: 3px solid pink;
+  border-bottom: 3px solid #f4efde;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  font-family: "CircularStd-Bold";
 }
 
 nav ul li:hover {
   border-bottom: 3px solid black;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  background: #f4efde;
+  margin: 0 auto;
+  border: 4px solid black;
+}
+
 section:hover {
-  background: darkslategray;
+  background: black;
   cursor: pointer;
-  color: white;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  color: #f4efde;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section:hover h1,
+section:hover h2,
+section:hover h2 a,
+section:hover p a,
+section:hover .link a i {
+  color: #f4efde;
+}
+
+section:hover h4 {
+  border-bottom: 3px solid #f4efde;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section:hover p a {
+  text-decoration: underline;
 }
 
 img {
   position: absolute;
 }
 
-.home > h1 {
-  font-family: "Roboto Slab", serif;
-  font-size: 3rem;
-  font-weight: 700;
+.home {
+  overflow: hidden;
 }
 
-.app {
-  background: lightcoral;
+.imgcontainer {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+img.homeimg {
+  position: fixed;
+  width: 100%;
+  -o-object-fit: fixed;
+     object-fit: fixed;
+}
+
+.home > h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .slideshow {
-  background: lightblue;
   font-style: italic;
   text-transform: uppercase;
   overflow: hidden;
-  color: cornflowerblue;
+  color: black;
+}
+
+.home, .link {
+  background: white;
+}
+
+.leftText, .leftText2 {
+  position: absolute;
+  left: -1000px;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.rightText, .rightText2 {
+  position: absolute;
+  right: -1000px;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.rightText.active, .rightText2.active {
+  right: 0;
+  pointer-events: all;
+  position: absolute;
+  height: 100%;
+  display: block;
+  background: black;
+  padding: 10px;
+  color: #f4efde;
+  line-height: 1.2;
+  overflow-y: scroll;
+}
+
+.leftText.active, .leftText2.active {
+  left: 0;
+  pointer-events: all;
+  position: absolute;
+  height: 100%;
+  display: block;
+  background: black;
+  padding: 10px;
+  color: #f4efde;
+  line-height: 1.2;
+  overflow-y: scroll;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: #f4efde;
+}
+
+.close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.job h4:last-child {
+  text-decoration: none;
+  border: none;
 }
 
 .clearfix {
@@ -126,26 +265,19 @@ img {
 
 /********* LARGEST [DESKTOP] SCREEN SIZE ****************/
 @media only screen and (min-width: 961px) {
-  /* Setting up the Grid*/
   .container {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 4fr 4fr 4fr 1fr 1fr 2fr;
         grid-template-columns: 4fr 4fr 4fr 1fr 1fr 2fr;
-    -ms-grid-rows: 1fr 4fr 4fr 2fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 4fr 4fr 2fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 4fr 4fr 2fr 1fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 4fr 2fr 1fr 1fr 3fr;
     max-width: 1240px;
     width: 80%;
     height: 85vh;
-    background: pink;
-    margin: 0 auto;
-    border: 4px solid black;
   }
   .menu-toggle {
     display: none;
   }
   .popover-left {
-    border: 1px solid red;
     -ms-grid-row: 2;
     -ms-grid-row-span: 6;
     grid-row: 2 / 8;
@@ -158,7 +290,6 @@ img {
     overflow: hidden;
   }
   .popover-right {
-    border: 1px solid yellow;
     -ms-grid-row: 2;
     -ms-grid-row-span: 6;
     grid-row: 2 / 8;
@@ -169,44 +300,6 @@ img {
     pointer-events: none;
     position: relative;
     overflow: hidden;
-  }
-  .leftText, .leftText2 {
-    position: absolute;
-    left: -1000px;
-    width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .rightText, .rightText2 {
-    position: absolute;
-    right: -1000px;
-    width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .rightText.active, .rightText2.active {
-    right: 0;
-    pointer-events: all;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: black;
-    padding: 10px;
-    color: white;
-    line-height: 1.2;
-    overflow-y: scroll;
-  }
-  .leftText.active, .leftText2.active {
-    left: 0;
-    pointer-events: all;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: black;
-    padding: 10px;
-    color: white;
-    line-height: 1.2;
-    overflow-y: scroll;
   }
   header {
     -ms-grid-row: 1;
@@ -223,13 +316,12 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    background: cornflowerblue;
+    background-image: url("img/g_aungsangsuukyi.jpg");
   }
   nav ul {
     width: 60%;
   }
   .home > h1 {
-    font-family: "Roboto Slab", serif;
     font-size: 3rem;
     font-weight: 700;
   }
@@ -248,6 +340,11 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+    background-image: url("img/g_asianGuy.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
   }
   #app2 {
     -ms-grid-row: 7;
@@ -264,6 +361,11 @@ img {
     -ms-grid-column: 3;
     -ms-grid-column-span: 4;
     grid-column: 3 / 7;
+    background-image: url("img/g_beardman3_nyc.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
   }
   .article {
     -ms-grid-row: 4;
@@ -280,7 +382,6 @@ img {
     -ms-grid-column: 4;
     -ms-grid-column-span: 3;
     grid-column: 4 / 7;
-    background: thistle;
   }
   .job {
     -ms-grid-row: 5;
@@ -303,7 +404,6 @@ img {
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
     grid-column: 5 / 6;
-    background: yellow;
   }
   .pinterest {
     -ms-grid-row: 6;
@@ -320,7 +420,6 @@ img {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     grid-column: 4 / 5;
-    background: yellow;
   }
   .comm {
     -ms-grid-row: 7;
@@ -329,16 +428,14 @@ img {
     -ms-grid-column: 3;
     -ms-grid-column-span: 4;
     grid-column: 3 / 7;
-    background: grey;
   }
-  /*** Image arranging ***/
+  /*** IMAGE ***/
   #flower1 img {
     bottom: 0;
     width: 40%;
     left: -200px;
   }
   #squid img {
-    border: 1px solid lime;
     width: 80%;
     top: -300px;
     right: -200px;
@@ -364,8 +461,6 @@ img {
     width: 100%;
   }
   .container {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 4fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 3fr 5fr 2fr 5fr 2fr 1fr 1fr 2fr;
@@ -373,9 +468,6 @@ img {
     max-width: 860px;
     width: 80%;
     min-height: 85vh;
-    background: pink;
-    margin: 0 auto;
-    border: 4px solid black;
   }
   .menu-toggle {
     display: block;
@@ -396,7 +488,6 @@ img {
     display: block;
     position: absolute;
     width: 79.1%;
-    background-color: lemonchiffon;
   }
   nav.active ul {
     display: block;
@@ -417,7 +508,6 @@ img {
     grid-column: 1 / 6;
   }
   .popover-left {
-    border: 1px solid red;
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     grid-row: 2 / 4;
@@ -430,7 +520,6 @@ img {
     overflow: hidden;
   }
   .popover-right {
-    border: 1px solid yellow;
     -ms-grid-row: 5;
     -ms-grid-row-span: 5;
     grid-row: 5 / 10;
@@ -442,53 +531,18 @@ img {
     position: relative;
     overflow: hidden;
   }
-  .leftText, .leftText2 {
-    position: absolute;
-    left: -1000px;
-    width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .rightText, .rightText2 {
-    position: absolute;
-    right: -1000px;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .rightText.active, .rightText2.active {
-    right: 0;
-    pointer-events: all;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: black;
-    padding: 10px;
-    color: white;
-    line-height: 1.2;
-    overflow-y: scroll;
-  }
-  .leftText.active, .leftText2.active {
-    left: 0;
-    pointer-events: all;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: black;
-    padding: 10px;
-    color: white;
-    line-height: 1.2;
-    overflow-y: scroll;
-  }
   .home {
-    background: cornflowerblue;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    background-image: url("img/g_lantern_ink.jpg");
+  }
+  .home h1 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
   #app1 {
     -ms-grid-row: 2;
@@ -498,6 +552,10 @@ img {
     -ms-grid-column-span: 4;
     grid-column: 2 / 6;
   }
+  #app1 h2 a {
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+  }
   #slide-left {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -505,6 +563,11 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
+    background-image: url("img/g_lingerie.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
   }
   #app2 {
     -ms-grid-row: 4;
@@ -521,6 +584,11 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
+    background-image: url("img/g_sunnygirl_150dpi.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
   }
   .article {
     -ms-grid-row: 6;
@@ -529,6 +597,10 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    padding: 20px;
+  }
+  .article p {
+    font-size: 1.4rem;
   }
   #app3 {
     -ms-grid-row: 6;
@@ -537,7 +609,6 @@ img {
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
     grid-column: 2 / 6;
-    background: thistle;
   }
   .job {
     -ms-grid-row: 7;
@@ -556,7 +627,6 @@ img {
     grid-column: 2 / 3;
   }
   .twitter {
-    background: yellow;
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
@@ -573,7 +643,6 @@ img {
     grid-column: 3 / 4;
   }
   .linkedin {
-    background: yellow;
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
     grid-row: 8 / 9;
@@ -582,7 +651,6 @@ img {
     grid-column: 2 / 3;
   }
   .comm {
-    background: grey;
     -ms-grid-row: 9;
     -ms-grid-row-span: 1;
     grid-row: 9 / 10;
@@ -601,17 +669,12 @@ img {
     display: none;
   }
   .container {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 2fr 8fr 2fr 4fr 2fr 8fr 2fr 1fr 2fr;
         grid-template-rows: 1fr 2fr 8fr 2fr 4fr 2fr 8fr 2fr 1fr 2fr;
     width: 100%;
     height: 100%;
-    background: lavender;
-    margin: 0 auto;
-    border: 4px solid black;
   }
   header {
     -ms-grid-row: 1;
@@ -629,10 +692,9 @@ img {
     font-size: 10pt;
   }
   .popover-left {
-    border: 1px solid red;
     -ms-grid-row: 2;
-    -ms-grid-row-span: 5;
-    grid-row: 2 / 7;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
@@ -642,7 +704,6 @@ img {
     overflow: hidden;
   }
   .popover-right {
-    border: 1px solid yellow;
     -ms-grid-row: 7;
     -ms-grid-row-span: 4;
     grid-row: 7 / 11;
@@ -654,53 +715,17 @@ img {
     position: relative;
     overflow: hidden;
   }
-  .leftText, .leftText2 {
-    position: absolute;
-    left: -1000px;
-    width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .rightText, .rightText2 {
-    position: absolute;
-    right: -1000px;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .rightText.active, .rightText2.active {
-    right: 0;
-    pointer-events: all;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: black;
-    padding: 10px;
-    color: white;
-    line-height: 1.2;
-    overflow-y: scroll;
-  }
-  .leftText.active, .leftText2.active {
-    left: 0;
-    pointer-events: all;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: black;
-    padding: 10px;
-    color: white;
-    line-height: 1.2;
-    overflow-y: scroll;
-  }
   .home {
-    background: cornflowerblue;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+  }
+  .home h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
   .job {
     -ms-grid-row: 2;
@@ -709,6 +734,11 @@ img {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3 / 5;
+    padding: 10px;
+  }
+  .job h4 {
+    font-size: 1.5rem;
+    line-height: 1.7em;
   }
   #app1 {
     -ms-grid-row: 4;
@@ -725,6 +755,11 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
+    background-image: url("img/g_feather2.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
   }
   #app2 {
     -ms-grid-row: 6;
@@ -741,6 +776,11 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
+    background-image: url("img/g_sunnygirl_150dpi.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
   }
   .article {
     -ms-grid-row: 5;
@@ -751,7 +791,6 @@ img {
     grid-column: 1 / 5;
   }
   #app3 {
-    background: thistle;
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
     grid-row: 8 / 9;
@@ -768,7 +807,6 @@ img {
     grid-column: 1 / 2;
   }
   .twitter {
-    background: yellow;
     -ms-grid-row: 9;
     -ms-grid-row-span: 1;
     grid-row: 9 / 10;
@@ -791,10 +829,8 @@ img {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
-    background: yellow;
   }
   .comm {
-    background: grey;
     -ms-grid-row: 10;
     -ms-grid-row-span: 1;
     grid-row: 10 / 11;
@@ -803,4 +839,4 @@ img {
     grid-column: 1 / 5;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=finalStyle.css.map */

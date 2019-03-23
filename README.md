@@ -15,6 +15,10 @@ Link to repository: https://github.com/rachelwong/portfolio
 ## Target Audience
 
 ## Tech Stack
+* [JQuery CDN](http://code.jquery.com/)
+* [Normalize CSS](https://github.com/necolas/normalize.css/)
+* [Google Fonts](https://fonts.google.com)
+* Social Media Icons from [Font Awesome](https://fontawesome.com)
 
 ## Design Process
 
