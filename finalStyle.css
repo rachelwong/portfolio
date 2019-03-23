@@ -123,7 +123,7 @@ section:hover h1,
 section:hover h2,
 section:hover h2 a,
 section:hover p a,
-section:hover .link a i {
+section.link:hover a i {
   color: #f4efde;
 }
 
@@ -316,7 +316,9 @@ img.homeimg {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    background-image: url("img/g_aungsangsuukyi.jpg");
+    background-image: url("img/g_homebg.jpg");
+    background-position: center;
+    background-size: contain;
   }
   nav ul {
     width: 60%;
@@ -374,6 +376,8 @@ img.homeimg {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
+    padding: 10px;
+    overflow: hidden;
   }
   #app3 {
     -ms-grid-row: 4;
@@ -538,7 +542,9 @@ img.homeimg {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    background-image: url("img/g_lantern_ink.jpg");
+    background-image: url("img/g_homebg2.jpg");
+    background-size: cover;
+    padding: 10px;
   }
   .home h1 {
     font-size: 4rem;
@@ -584,7 +590,7 @@ img.homeimg {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
-    background-image: url("img/g_sunnygirl_150dpi.jpg");
+    background-image: url("img/g_lantern_ink.jpg");
     background-origin: content-box;
     background-size: cover;
     background-repeat: no-repeat;
@@ -617,6 +623,16 @@ img.homeimg {
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-column: 4 / 6;
+    padding: 10px;
+    overflow: hidden;
+  }
+  section.link a i {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  section.link:hover a i {
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   .email {
     -ms-grid-row: 7;
@@ -797,6 +813,14 @@ img.homeimg {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
+  }
+  section.link a i {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  section.link:hover a i {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
   }
   .email {
     -ms-grid-row: 9;

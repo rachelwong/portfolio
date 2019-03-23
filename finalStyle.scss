@@ -110,7 +110,7 @@ section:hover h1,
 section:hover h2, 
 section:hover h2 a, 
 section:hover p a, 
-section:hover .link a i{
+section.link:hover a i{
   color: $beige;
 }
 
@@ -275,7 +275,9 @@ img {
   .home {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    background-image: url('img/g_aungsangsuukyi.jpg');
+    background-image: url('img/g_homebg.jpg');
+    background-position: center;
+    background-size: contain;
   }
 
   nav ul {
@@ -321,6 +323,8 @@ img {
   .article {
     grid-row: 4 / 7;
     grid-column: 3 / 4;
+    padding:10px;
+    overflow:hidden;
   }
 
   #app3 {
@@ -459,7 +463,9 @@ img {
   .home {    
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    background-image: url('img/g_lantern_ink.jpg');
+    background-image: url('img/g_homebg2.jpg');
+    background-size: cover;
+    padding:10px;
   }
 
   .home h1{
@@ -495,7 +501,7 @@ img {
   #slide-right {
     grid-row: 5 / 6;
     grid-column: 1 / 6;
-    background-image: url('img/g_sunnygirl_150dpi.jpg');
+    background-image: url('img/g_lantern_ink.jpg');
     background-origin: content-box;
     background-size: cover;
     background-repeat: no-repeat;
@@ -519,8 +525,14 @@ img {
   .job {
     grid-row: 7 / 9;
     grid-column: 4 / 6;
+    padding:10px;
+    overflow:hidden;
   }
 
+  section.link a i {transition: all .2s ease-in-out;}
+  section.link:hover a i{
+    transform: scale(2);
+  }
   .email {
     grid-row: 7 / 8;
     grid-column: 2 / 3;
@@ -647,6 +659,12 @@ img {
   #app3 {
     grid-row: 8 / 9;
     grid-column: 1 / 5;
+  }
+
+  section.link a i {transition: all .2s ease-in-out;}
+  
+  section.link:hover a i{
+    transform: scale(1.8);
   }
 
   .email {
