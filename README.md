@@ -27,6 +27,7 @@ I use this portfolio to reach out to fellow full-stack web developers, front-end
 Also, I would like to use a unique but accessible web page design layout as a calling-card to attract prospective employers in start-ups and SMEs by showcasing my ability to translate my interface aesthetics in a functional, tested product. I would like to demonstrate to recruiters and hiring managers that I am a visual thinker and I'm bringing aboard a mature and current visual aesthetic with the coding abilities to bring designs to life using current frameworks and coding practices. 
 
 ## Tech Stack
+
 * [JQuery CDN](http://code.jquery.com/) to enable the slide out content
 * [Normalize CSS](https://github.com/necolas/normalize.css/) as the industry standard for resetting browser default styles to create a clean slate to work with
 * [Google Fonts](https://fonts.google.com) for main paragraph text 
@@ -51,9 +52,30 @@ A number of websites had particularly inspired the design aesthetic
 * [Canal Street Market](https://canalstreet.market/community/)
 
 <img src="http://theartboxacademy.com/wp-content/uploads/2016/03/bigstock-Seamless-abstract-mosaic-patte-125785532.jpg" alt="mondrian" width="500">
-In the end, I leaned for the Mondrian, line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
+*Image courtesy of [The Art Box Academy]("http://theartboxacademy.com)*
+In the end, I leaned for the [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian), line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
+
+## Overall Timeline
+
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/timeline.jpg" width="800" align="center" alt="Timeline for the project">
 
 ## Usability considerations
+
+Aiming to cater for a spectrum of users, I implemented the following
+
+* Used `ARIA-labeledbym`, `ARIA-describedby` to label content
+* used `role` for navigation, buttons
+* used alt tag for images where needed
+* used title tag for links where needed
+
+I attempted to test my site using the [a11y Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/). Unfortunately for some reason it failed to pick up on the black text and subsequently failed the test. 
+
+The Google Audit also revealed that the site could use some improvement. Key opportunities for improvement include
+* Avoid enormous network load (the whole page is 8mb)
+* serve responsive images
+* minify or refactor the javascript
+
+
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" align="center" alt="larene twitter conversation" />
 
 I have also reached out to [Ms Larene Le Gassick](https://twitter.com/larenelg), a Brisbane-based full-stack developer with background in  accessibility for her take on auditing and testing for web accessibility. Her advice reaffirmed that enabling website usability and accessibility does not end with a simple matter of checking off a proverbial list or running a website through an automated html auditing tool. Rather only real focus group testing can reveal any flaws and deficiencies in the user journey experience.  
