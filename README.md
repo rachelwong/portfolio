@@ -23,6 +23,10 @@ First and foremost, due to time and resource constraints, this portfolio is desi
 
 ## Screenshots
 
+* [Full screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png) from 961px width and upwards 
+* [Tablet screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_tablet.jpg) from 401px width to 960px width 
+* [Mobile screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_mobile.jpg) anything below 400px width 
+
 ## Target Audience
 
 I use this portfolio to reach out to fellow full-stack web developers, front-end engineers and project managers both in Australia and other English-speaking countries abroad. I want to showcase my projects - flaws and all - in order to exchange ideas and learn from the online community. 
@@ -43,6 +47,10 @@ My research took me to
 * [Behance](https://www.behance.net/galleries/8/Interaction?tracking_source=title) - a curated listing of interaction design projects
 * [Dark Code](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw) and [OT Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)- YouTube channels of code-along HTML/CSS3/JQuery examples to see what is feasible to design and produce. 
 
+A number of websites had particularly inspired the design aesthetic
+* 
+
+
 
 ## Wireframes
 
@@ -52,7 +60,7 @@ My research took me to
 * Mobile Wireframe
 
 ## Usability considerations
-![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png){:height="50%" width="50%"}
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" alt="larene twitter conversation" />
 
 I have also reached out to [Ms Larene Le Gassick](https://twitter.com/larenelg), a Brisbane-based full-stack developer with background in  accessibility for her take on auditing and testing for web accessibility. Her advice reaffirmed that enabling website usability and accessibility does not end with a simple matter of checking off a proverbial list or running a website through an automated html auditing tool. Rather only real focus group testing can reveal any flaws and deficiencies in the user journey experience.  
 
@@ -64,6 +72,8 @@ As this portfolio website represents my first foray into consolidating and displ
 It is clear that this is an image heavy website. 
 
 As such, **responsive images** and **optimising image quality** (PNG, GIF, JPG) can go a long way to improve the website loading time. The best scenario would be to have an image server that can resize an image to any given dimension, in real-time, just by changing the image URL. That way, whenever the image dimension requirement changes, all that is required is to specify that dimension in the URL. 
+
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/code_img.png" height="120" alt="code sample">
 
 ### Mobile First
 Instead of employing graceful degradation (desktop-first development) approach, the website could be built for mobile users first (progressive enhancement). 
@@ -85,9 +95,15 @@ The prototyping stage involved testing various features that unfortunately did n
 ### Early Planning (Day 1 - 2)
 A [Trello board](https://trello.com/b/i99ZFPBV/portfolio) was set up to track my progress and ensuring that I meet all the design brief and assessment rubric criteria. 
 
+[!alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%2010.53.01%20am.png)
+
 A [Pinterest board](https://www.pinterest.com.au/rachwong/portfolio/) was also set up during the early research phase where I would collect wholesale any designs that caught my eye. 
 
+[!alt_text](https://github.com/rachelwong/portfolio/blob/master/img/pinterest.png)
+
 From there, I built up a rudimentary [Moodzer moodboard](https://moodzer.com/boards/KyWzbYnD/) to orient my prototyping and began penciling through wireframes(## Wireframes). 
+
+[!alt_text](https://github.com/rachelwong/portfolio/blob/master/img/moodboard.jpg)
 
 ### Prototyping and troubleshooting (Day 3 - 4)
 
