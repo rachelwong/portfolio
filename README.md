@@ -56,11 +56,12 @@ A number of websites had particularly inspired the design aesthetic
 
 ![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
 
-* Tablet Wireframe
-* Mobile Wireframe
+* [Desktop Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
+* [Tablet Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_tablet.jpg)
+* [Mobile Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_mobile.jpg)
 
 ## Usability considerations
-<img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" alt="larene twitter conversation" />
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" align="center" alt="larene twitter conversation" />
 
 I have also reached out to [Ms Larene Le Gassick](https://twitter.com/larenelg), a Brisbane-based full-stack developer with background in  accessibility for her take on auditing and testing for web accessibility. Her advice reaffirmed that enabling website usability and accessibility does not end with a simple matter of checking off a proverbial list or running a website through an automated html auditing tool. Rather only real focus group testing can reveal any flaws and deficiencies in the user journey experience.  
 
@@ -73,7 +74,7 @@ It is clear that this is an image heavy website.
 
 As such, **responsive images** and **optimising image quality** (PNG, GIF, JPG) can go a long way to improve the website loading time. The best scenario would be to have an image server that can resize an image to any given dimension, in real-time, just by changing the image URL. That way, whenever the image dimension requirement changes, all that is required is to specify that dimension in the URL. 
 
-<img src="https://github.com/rachelwong/portfolio/blob/master/img/code_img.png" height="120" alt="code sample">
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/code_img.png" height="200" alt="code sample" align="center">
 
 ### Mobile First
 Instead of employing graceful degradation (desktop-first development) approach, the website could be built for mobile users first (progressive enhancement). 
