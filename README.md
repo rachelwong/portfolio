@@ -19,16 +19,6 @@ First and foremost, due to time and resource constraints, this portfolio is desi
 * CSS-Flexbox helped to position typography in grid cells
 * Uses `@font-face` to enable a custom typeface [*CircularStd-Bold*](http://fontoteka.com/font/circular-std-bold) that is not available on Google Fonts
 
-## Sitemap
-
-## Screenshots
-
-<img src="https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png" alt="screenshot" width="600" align="center">
-
-* [Full screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png) from 961px width and upwards 
-* [Tablet screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_tablet.jpg) from 401px width to 960px width 
-* [Mobile screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_mobile.jpg) anything below 400px width 
-
 ## Target Audience
 
 I use this portfolio to reach out to fellow full-stack web developers, front-end engineers and project managers both in Australia and other English-speaking countries abroad. I want to showcase my projects - flaws and all - in order to exchange ideas and learn from the online community. 
@@ -90,15 +80,15 @@ The prototyping stage involved testing various features that unfortunately did n
 ### Early Planning (Day 1 - 2)
 A [Trello board](https://trello.com/b/i99ZFPBV/portfolio) was set up to track my progress and ensuring that I meet all the design brief and assessment rubric criteria. 
 
-[!alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%2010.53.01%20am.png)
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%2010.53.01%20am.png" width="800" alt="Trello board" >
 
 A [Pinterest board](https://www.pinterest.com.au/rachwong/portfolio/) was also set up during the early research phase where I would collect wholesale any designs that caught my eye. 
 
-[!alt_text](https://github.com/rachelwong/portfolio/blob/master/img/pinterest.png)
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/pinterest.png" width="800" alt="Pinterest" />
 
 From there, I built up a rudimentary [Moodzer moodboard](https://moodzer.com/boards/KyWzbYnD/) to orient my prototyping and began penciling through wireframes(## Wireframes). 
 
-[!alt_text](https://github.com/rachelwong/portfolio/blob/master/img/moodboard.jpg)
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/moodboard.jpg" width="800" alt="Moodzer">
 
 ### Prototyping and troubleshooting (Day 3 - 4)
 
@@ -109,7 +99,6 @@ From there, I built up a rudimentary [Moodzer moodboard](https://moodzer.com/boa
 * [Desktop Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
 * [Tablet Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_tablet.jpg)
 * [Mobile Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_mobile.jpg)
-
 
 After two days of planning, I started to build a prototype to see how close I am able to build the website according to the initial wireframes. I also built separate pages testing out different javascript features such as multiple image sliders on the same page. 
 
@@ -123,10 +112,20 @@ Project documentation was written in parallel with the prototyping and final bui
 * [Tablet Prototype](https://github.com/rachelwong/portfolio/blob/master/img/proto_screenshot_tablet.png)
 * [Mobile Prototype](https://github.com/rachelwong/portfolio/blob/master/img/proto_screenshot_mobile.png)
 
-### Final Build and testing (Day 5 - 6)
+
+#### Final Build and testing (Day 5 - 6)
 
 Since the testing prototype is quite close to the design brief, the final submitted product essentially follows the skeleton HTML5/CSS3 and populated with the real content, colour scheme, live links and portfolio images. 
 
+#### Screenshots
+
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png" alt="screenshot" width="600" align="center">
+
+* [Full screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png) from 961px width and upwards 
+* [Tablet screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_tablet.jpg) from 401px width to 960px width 
+* [Mobile screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_mobile.jpg) anything below 400px width 
+
+#### Sitemap
 ___
 
 # Q & A
