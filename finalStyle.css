@@ -275,9 +275,23 @@ h2.meetupLink > a {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.textwrapper h2 a {
+  font-family: "CircularStd-Bold";
+}
+
 .textwrapper p, .textwrapper a {
   display: block;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #f4efde;
+}
+
+.textwrapper ul li {
+  padding-top: 10px;
+  list-style-type: square;
+  color: #f4efde;
+}
+
+.textwrapper ul li::before {
   color: #f4efde;
 }
 

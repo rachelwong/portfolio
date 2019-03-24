@@ -254,10 +254,23 @@ h2.meetupLink > a{
 
 }
 
+.textwrapper h2 a{
+  font-family: "CircularStd-Bold";
+}
 .textwrapper p, .textwrapper a {
   display:block;
   font-family: 'Source Sans Pro', sans-serif;
   color: $beige;
+}
+
+.textwrapper ul li{
+  padding-top:10px;
+  list-style-type:square;
+  color:$beige;
+}
+
+.textwrapper ul li::before{
+  color:$beige;
 }
 
 .githubLink{
@@ -276,6 +289,7 @@ h2.meetupLink > a{
 .githubLink:hover{
 background: $beige;
 color:black;
+font-weight:800;
 }
 
 .textwrapper img{

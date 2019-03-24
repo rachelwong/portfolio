@@ -54,9 +54,10 @@ A number of websites had particularly inspired the design aesthetic
 * [Canal Street Market](https://canalstreet.market/community/)
 
 <img src="http://theartboxacademy.com/wp-content/uploads/2016/03/bigstock-Seamless-abstract-mosaic-patte-125785532.jpg" alt="mondrian" width="500" />
-*Image courtesy of http://theartboxacademy.com*
 
-In the end of the first two days, I leaned for the [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian), line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
+Image courtesy of http://theartboxacademy.com
+
+By the end of the first two days, I was leaning for the [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian), line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
 
 ## Usability considerations
 
