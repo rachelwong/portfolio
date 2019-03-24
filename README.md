@@ -52,7 +52,7 @@ My research took me to
 * Mobile Wireframe
 
 ## Usability considerations
-![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png | width=300)
+![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png){:height="50%" width="50%"}
 
 I have also reached out to [Ms Larene Le Gassick](https://twitter.com/larenelg), a Brisbane-based full-stack developer with background in  accessibility for her take on auditing and testing for web accessibility. Her advice reaffirmed that enabling website usability and accessibility does not end with a simple matter of checking off a proverbial list or running a website through an automated html auditing tool. Rather only real focus group testing can reveal any flaws and deficiencies in the user journey experience.  
 
@@ -74,10 +74,11 @@ In this context, some research could be made into [lazy loading](https://codebur
 The prototyping stage involved testing various features that unfortunately did not make it to deployment on time. If time permits, I would like to explore the following: 
 * Optimise images further for faster mobile loading
 * Add two Javascript image sliders, now replaced temporarily with static placeholder images from my illustration portfolio.
+* Include an About Me page that introduces myself. 
 * CSS Animation of decorative images scrolling past 
 * More accessibility features such as ARIA properties, roles can be used more effectively. 
 * Some more finetuning of typeface positioning using `align-items` and `justify-content` properties will improve on consistency. I note that there is some text blow-out of grid cell when the screen size reduces.
-* Add more (successful) programming projects so that it is clearer in my intent to be a software developer. 
+* Add more (successful) programming projects so that it is clearer in my intent to be a software developer. At the moment, the amount of illustrative work might confuses the message that I am sending to website visitors. 
 
 ## Project Plan & Timeline (with Trello)
 
