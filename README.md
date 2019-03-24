@@ -4,6 +4,8 @@ Link to Portfolio: https://rachelwong.github.io/portfolio/
 
 Link to repository: https://github.com/rachelwong/portfolio
 
+[Click for Google Presentation](https://docs.google.com/presentation/d/e/2PACX-1vQD8oQapz83rfKfwE_YR-hh1fQ_yfNU9QfvyP-5mBYggrdI2EdgpR8cmzjKoXKp9BPK_CPBgTv78UE7/pub?start=false&loop=false&delayms=5000)
+
 ## Purpose
 
 The primary purpose of this project to experiment with how I can best communicate my personality, current work and aspirations to be a fullstack web developer on the website platform. I want to attract work from SMEs in the front-end space. 
@@ -37,7 +39,7 @@ Also, I would like to use a unique but accessible web page design layout as a ca
 
 ## Design Process
 
-My research took me to 
+During the first two days of the project timeline, my research took me to 
 * [SiteInspire](https://www.siteinspire.com) - a gallery showcase of industry-leading website designs
 * [Behance](https://www.behance.net/galleries/8/Interaction?tracking_source=title) - a curated listing of interaction design projects
 * [Dark Code](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw) and [OT Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)- YouTube channels of code-along HTML/CSS3/JQuery examples to see what is feasible to design and produce. 
@@ -52,19 +54,19 @@ A number of websites had particularly inspired the design aesthetic
 * [Canal Street Market](https://canalstreet.market/community/)
 
 <img src="http://theartboxacademy.com/wp-content/uploads/2016/03/bigstock-Seamless-abstract-mosaic-patte-125785532.jpg" alt="mondrian" width="500">
-**Image courtesy of [The Art Box Academy](http://theartboxacademy.com)**
+Image courtesy of [The Art Box Academy](http://theartboxacademy.com)
 
-In the end, I leaned for the [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian), line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
+In the end of the first two days, I leaned for the [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian), line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
 
 ## Usability considerations
 
-Aiming to cater for a spectrum of users, I implemented the following
+To cater for a spectrum of users, I implemented the following
 
 * Used semantic HTML `<nav>` `<section>`
 * Used `ARIA-labeledby`, `ARIA-describedby` to label content
 * used `role` for navigation, buttons
-* used alt tag for images where needed
-* used title tag for links where needed
+* used `alt` tag for images where needed
+* used `title` tag for links where needed
 
 I attempted to test my site using the [a11y Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/). Unfortunately for some reason it failed to pick up on the black text and subsequently failed the test. 
 
@@ -77,7 +79,7 @@ The *Google Audit* also revealed that the site could use some improvement. Key o
 
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Googel%20Audit.png" width="800" alt="Google Audit testing">
 
-The site was also tested on Safari, Firefox, Edge and Chrome.
+The site was also tested on Safari, Firefox, Edge and Chrome browsers. It was noted using the free browser compatibility tool [Browserling](https://www.browserling.com) that due to the javascript, some text blow-out occurred when viewed on Internet Explorer. 
 
 #### Consulting the Accessiblity Expert
 
