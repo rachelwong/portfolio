@@ -70,11 +70,16 @@ Aiming to cater for a spectrum of users, I implemented the following
 
 I attempted to test my site using the [a11y Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/). Unfortunately for some reason it failed to pick up on the black text and subsequently failed the test. 
 
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/a11y_colourContrast.png" width="800" alt="a117 testing">
+
 The Google Audit also revealed that the site could use some improvement. Key opportunities for improvement include
 * Avoid enormous network load (the whole page is 8mb)
 * serve responsive images
 * minify or refactor the javascript
 
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/Googel%20Audit.png" width="800" alt="Google Audit testing">
+
+The site was also tested on Safari, Firefox, Edge and Chrome.
 
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" align="center" alt="larene twitter conversation" />
 
