@@ -14,7 +14,8 @@ I am also using this portfolio assignment as a way to fully understand how CSS-g
 
 First and foremost, due to time and resource constraints, this portfolio is designed to function as a single-page website. It exhibits the following attributes:
 * Clicking on the project links on the page will trigger JQuery-enabled sliders to reveal more content
-* CSS-Grid form the foundation of the layout, which responsively caters for three viewports (Desktop above 1024px, tablet above 400px, and mobile from 400px and below)
+* CSS-Grid form the foundation of the layout
+* Media queries responsively caters for three viewports (Desktop above 961px, tablet above 400px, and mobile from 400px and below)
 * Collapsed navigation menu when the screen size reduces to tablet sizes and returns to a normal horizontal text 
 * CSS-Flexbox helped to position typography in grid cells
 * Uses `@font-face` to enable a custom typeface [*CircularStd-Bold*](http://fontoteka.com/font/circular-std-bold) that is not available on Google Fonts
@@ -41,8 +42,16 @@ My research took me to
 * [Dark Code](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw) and [OT Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)- YouTube channels of code-along HTML/CSS3/JQuery examples to see what is feasible to design and produce. 
 
 A number of websites had particularly inspired the design aesthetic
-* 
+* [TQ South](https://tq.co/) - a website showcasing tech companies in Amsterdam South
+* [https://s-i-l-o.fr/](https://s-i-l-o.fr/)
+* [David McGillray art director portfolio](http://dmcg.co/)
+* [A history of racial justice](https://calendar.eji.org/racial-injustice/mar/)
+* [Design your life](http://designyourlife.com.au/)
+* [Dropbox blog](https://blog.dropbox.com/)
+* [Canal Street Market](https://canalstreet.market/community/)
 
+<img src="http://theartboxacademy.com/wp-content/uploads/2016/03/bigstock-Seamless-abstract-mosaic-patte-125785532.jpg" alt="mondrian" width="500">
+In the end, I leaned for the Mondrian, line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
 
 ## Usability considerations
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" align="center" alt="larene twitter conversation" />
@@ -56,7 +65,7 @@ As this portfolio website represents my first foray into consolidating and displ
 ### Performance
 It is clear that this is an image heavy website. 
 
-As such, **responsive images** and **optimising image quality** (PNG, GIF, JPG) can go a long way to improve the website loading time. The best scenario would be to have an image server that can resize an image to any given dimension, in real-time, just by changing the image URL. That way, whenever the image dimension requirement changes, all that is required is to specify that dimension in the URL. 
+Therefore, **responsive images** and **optimising image quality** (PNG, GIF, JPG) can go a long way to improve the website loading time. The best scenario would be to have an image server that can resize an image to any given dimension, in real-time, just by changing the image URL. That way, whenever the image dimension requirement changes, all that is required is to specify that dimension in the URL. 
 
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/code_img.png" height="200" alt="code sample" align="center">
 
@@ -126,6 +135,10 @@ Since the testing prototype is quite close to the design brief, the final submit
 * [Mobile screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_mobile.jpg) anything below 400px width 
 
 #### Sitemap
+
+Although the portfolio is essentially a single page site the content does align to a single-layer hierarchy. 
+
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/SiteMap.png" alt="Final sitemap" width="760">
 ___
 
 # Q & A
