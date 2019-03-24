@@ -52,18 +52,16 @@ A number of websites had particularly inspired the design aesthetic
 * [Canal Street Market](https://canalstreet.market/community/)
 
 <img src="http://theartboxacademy.com/wp-content/uploads/2016/03/bigstock-Seamless-abstract-mosaic-patte-125785532.jpg" alt="mondrian" width="500">
-*Image courtesy of [The Art Box Academy]("http://theartboxacademy.com)*
+**Image courtesy of [The Art Box Academy](http://theartboxacademy.com)**
+
 In the end, I leaned for the [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian), line-heavy graphic style for the website and using typeface as navigation. The lattice art style will allow me to experiment with CSS grid and challenge me in getting positioning correct for all three viewports. It is both an visually pleasing style and sufficiently exciting coding challenge to implement. 
-
-## Overall Timeline
-
-<img src="https://github.com/rachelwong/portfolio/blob/master/img/timeline.jpg" width="800" align="center" alt="Timeline for the project">
 
 ## Usability considerations
 
 Aiming to cater for a spectrum of users, I implemented the following
 
-* Used `ARIA-labeledbym`, `ARIA-describedby` to label content
+* Used semantic HTML `<nav>` `<section>`
+* Used `ARIA-labeledby`, `ARIA-describedby` to label content
 * used `role` for navigation, buttons
 * used alt tag for images where needed
 * used title tag for links where needed
@@ -72,7 +70,7 @@ I attempted to test my site using the [a11y Color Contrast Accessibility Validat
 
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/a11y_colourContrast.png" width="800" alt="a117 testing">
 
-The Google Audit also revealed that the site could use some improvement. Key opportunities for improvement include
+The *Google Audit* also revealed that the site could use some improvement. Key opportunities for improvement include
 * Avoid enormous network load (the whole page is 8mb)
 * serve responsive images
 * minify or refactor the javascript
@@ -80,6 +78,8 @@ The Google Audit also revealed that the site could use some improvement. Key opp
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Googel%20Audit.png" width="800" alt="Google Audit testing">
 
 The site was also tested on Safari, Firefox, Edge and Chrome.
+
+#### Consulting the Accessiblity Expert
 
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" align="center" alt="larene twitter conversation" />
 
@@ -110,8 +110,11 @@ The prototyping stage involved testing various features that unfortunately did n
 * More accessibility features such as ARIA properties, roles can be used more effectively. 
 * Some more finetuning of typeface positioning using `align-items` and `justify-content` properties will improve on consistency. I note that there is some text blow-out of grid cell when the screen size reduces.
 * Add more (successful) programming projects so that it is clearer in my intent to be a software developer. At the moment, the amount of illustrative work might confuses the message that I am sending to website visitors. 
+* Add Copyright statement
 
 ## Project Plan & Timeline (with Trello)
+
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/timeline.jpg" width="1000" align="center" alt="Timeline for the project">
 
 ### Early Planning (Day 1 - 2)
 A [Trello board](https://trello.com/b/i99ZFPBV/portfolio) was set up to track my progress and ensuring that I meet all the design brief and assessment rubric criteria. 
@@ -172,6 +175,13 @@ ___
 
 > Describe key events in the development of the internet from the 1980s to today.
 
+The internet descended from ARPAnet, a project funded by the U.S. Department of Defence. Technically, the internet was created when various networks in universities across the United States were themselves networked together. The internet was first used in the development of computer science, allowing more efficient sharing of knowledge and computing power between the computer science departments of the networked universities. The internet started to see wide adoption in industry when its first "killer app" was developed: email. Consumer use started to explode with the invention and deployment of the World Wide Web, a technology now so indentified with the internet that the two terms are often (incorrectly) used interchangably. In recent times, consumer use of the internet has been increasingly shaped by internet-enabled mobile devices such as smartphones and tablets. Today, more than half of the world's population has access to the internet.
+
 > Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers
 
+Every device connected to the internet has an I.P. address, be it a smartphone used to access the internet or a server computer hosting a website. Because I.P. addresses are long strings of semi-random numbers, remembering lots of them would be prohibitive. Instead, domain names are used. When a user types "google.com" into their web browser, this query is sent to a domain name server (DNS), which looks up google.com and returns the associated I.P. address. The web browser then requests data (in this case, the homepage of google.com) from this I.P. address, and the server there will send the browser the requested data. Web servers and web browsers use publically available proctocols to transfer information. The most commonly used protocols are HTTP (HyperText Transfer Protocol) and HTTPS (the same, but communications are encrypted). These can be thought of as computer languages: if the computers involved (browser and server) did not speak the same language, communication could not occur. Once the information is recieved, it is displayed to the user, again in accordance with common, publically available standards.
+
 > Reflect on one aspect of the development of internet technologies and how it has contributed to the world today
+
+Because of the development and widespread deployment of cloud-based storage solutions, many kinds of work no longer necessarily need to be done at a traditional workplace. Instead of storing a spreadsheet locally on a work computer, it can be stored on an always-accessible internet-connected server. This means the spreadsheet can be edited live from any internet connected device at any time, be it the traditional work computer between the hours of 9am and 5pm, or from the worker's smartphone at 3am Sunday morning. This technology (as well as similar precedecessors) has enabled a wide range of social changes, including increased telecommuting, offshoring, and responsiveness of businesses outside of normal business hours. It has also increased the expectation for employees to be available to their employers at any time of the day and on any day of the week.
+
