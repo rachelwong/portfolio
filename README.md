@@ -15,6 +15,7 @@ I am also using this portfolio assignment as a way to fully understand how CSS-g
 First and foremost, due to time and resource constraints, this portfolio is designed to function as a single-page website. It exhibits the following attributes:
 * Clicking on the project links on the page will trigger JQuery-enabled sliders to reveal more content
 * CSS-Grid form the foundation of the layout, which responsively caters for three viewports (Desktop above 1024px, tablet above 400px, and mobile from 400px and below)
+* Collapsed navigation menu when the screen size reduces to tablet sizes and returns to a normal horizontal text 
 * CSS-Flexbox helped to position typography in grid cells
 * Uses `@font-face` to enable a custom typeface [*CircularStd-Bold*](http://fontoteka.com/font/circular-std-bold) that is not available on Google Fonts
 
@@ -51,7 +52,7 @@ My research took me to
 * Mobile Wireframe
 
 ## Usability considerations
-![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png)
+![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png | width=300)
 
 I have also reached out to [Ms Larene Le Gassick](https://twitter.com/larenelg), a Brisbane-based full-stack developer with background in  accessibility for her take on auditing and testing for web accessibility. Her advice reaffirmed that enabling website usability and accessibility does not end with a simple matter of checking off a proverbial list or running a website through an automated html auditing tool. Rather only real focus group testing can reveal any flaws and deficiencies in the user journey experience.  
 
@@ -70,11 +71,13 @@ Instead of employing graceful degradation (desktop-first development) approach, 
 In this context, some research could be made into [lazy loading](https://codeburst.io/5-steps-to-speed-up-your-image-heavy-website-65c874a86966) whereby image loading can be deferred until it is actually needed. 
 
 ### Nice to have features
-The prototyping stage involved testing various features that unfortunately did not make it to deployment on time. They include:
-* Two Javascript image sliders, now replaced temporarily with static images.
+The prototyping stage involved testing various features that unfortunately did not make it to deployment on time. If time permits, I would like to explore the following: 
+* Optimise images further for faster mobile loading
+* Add two Javascript image sliders, now replaced temporarily with static placeholder images from my illustration portfolio.
 * CSS Animation of decorative images scrolling past 
 * More accessibility features such as ARIA properties, roles can be used more effectively. 
-* Some more finetuning of typeface positioning using `align-items` and `justify-content` properties will improve on consistency. 
+* Some more finetuning of typeface positioning using `align-items` and `justify-content` properties will improve on consistency. I note that there is some text blow-out of grid cell when the screen size reduces.
+* Add more (successful) programming projects so that it is clearer in my intent to be a software developer. 
 
 ## Project Plan & Timeline (with Trello)
 

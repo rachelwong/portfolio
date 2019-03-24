@@ -492,6 +492,7 @@ img.homeimg {
     display: block;
     position: absolute;
     width: 79.1%;
+    background: #f4efde;
   }
   nav.active ul {
     display: block;
