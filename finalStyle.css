@@ -219,6 +219,13 @@ img.homeimg {
   overflow-y: scroll;
 }
 
+h2.meetupLink > a {
+  height: 500px;
+  padding-top: 200px;
+  line-height: 6rem;
+  border-bottom: 3px solid #f4efde;
+}
+
 .close {
   position: absolute;
   right: 32px;
@@ -254,6 +261,12 @@ img.homeimg {
 .job h4:last-child {
   text-decoration: none;
   border: none;
+}
+
+.leftText, .leftText2, .rightText {
+  text-align: left;
+  padding: 30px;
+  width: 80%;
 }
 
 .clearfix {

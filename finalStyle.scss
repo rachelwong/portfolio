@@ -159,7 +159,6 @@ img {
   background: white;
 }
 
-
 .leftText, .leftText2{
   position: absolute;
   left: -1000px;
@@ -200,6 +199,13 @@ img {
     overflow-y: scroll;
 }
 
+h2.meetupLink > a{
+  height:500px;
+  padding-top:200px;
+  line-height:6rem;
+  border-bottom:3px solid $beige;
+}
+
 .close {
   position: absolute;
   right: 32px;
@@ -231,6 +237,12 @@ img {
 .job h4:last-child{
   text-decoration:none;
   border:none;
+}
+
+.leftText, .leftText2, .rightText{
+  text-align:left;
+  padding:30px;
+  width:80%;
 }
 
 .clearfix {
