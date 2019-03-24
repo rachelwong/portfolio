@@ -292,6 +292,10 @@ color:black;
 font-weight:800;
 }
 
+img#mentalDiary{
+  width:50%;
+
+}
 .textwrapper img{
   display:inline-block;
 }
@@ -300,6 +304,7 @@ font-weight:800;
   color: $beige;
   display:block;
   list-style-type: square;
+  line-height:2rem;
 }
 .clearfix {
   clear: both;

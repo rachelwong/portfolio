@@ -312,6 +312,11 @@ h2.meetupLink > a {
 .githubLink:hover {
   background: #f4efde;
   color: black;
+  font-weight: 800;
+}
+
+img#mentalDiary {
+  width: 50%;
 }
 
 .textwrapper img {
@@ -323,6 +328,7 @@ h2.meetupLink > a {
   color: #f4efde;
   display: block;
   list-style-type: square;
+  line-height: 2rem;
 }
 
 .clearfix {
