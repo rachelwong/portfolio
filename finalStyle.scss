@@ -61,7 +61,7 @@ h4 {
   font-family: "CircularStd-Bold";
 }
 
-p{
+p, ul, li{
   font-family: 'Source Sans Pro', sans-serif;
 }
 a,
@@ -239,12 +239,54 @@ h2.meetupLink > a{
   border:none;
 }
 
+/* style the sliding content */
+
 .leftText, .leftText2, .rightText{
   text-align:left;
-  padding:30px;
-  width:80%;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
+.textwrapper{
+  width:100%;
+  padding:50px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.textwrapper p, .textwrapper a {
+  display:block;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $beige;
+}
+
+.githubLink{
+  color: $beige;
+}
+
+.githubLink{
+  text-align:center;
+  padding:10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width:100%;
+  border:3px solid $beige;
+  transition: all 0.5s ease-in-out; 
+}
+
+.githubLink:hover{
+background: $beige;
+color:black;
+}
+
+.textwrapper img{
+  display:inline-block;
+}
+.textwrapper ul li{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $beige;
+  display:block;
+  list-style-type: square;
+}
 .clearfix {
   clear: both;
   visibility: hidden;

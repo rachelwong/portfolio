@@ -23,6 +23,8 @@ First and foremost, due to time and resource constraints, this portfolio is desi
 
 ## Screenshots
 
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png" alt="screenshot" width="600" align="center">
+
 * [Full screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_desktop.png) from 961px width and upwards 
 * [Tablet screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_tablet.jpg) from 401px width to 960px width 
 * [Mobile screen](https://github.com/rachelwong/portfolio/blob/master/img/screenshot_mobile.jpg) anything below 400px width 
@@ -34,11 +36,12 @@ I use this portfolio to reach out to fellow full-stack web developers, front-end
 Also, I would like to use a unique but accessible web page design layout as a calling-card to attract prospective employers in start-ups and SMEs by showcasing my ability to translate my interface aesthetics in a functional, tested product. I would like to demonstrate to recruiters and hiring managers that I am a visual thinker and I'm bringing aboard a mature and current visual aesthetic with the coding abilities to bring designs to life using current frameworks and coding practices. 
 
 ## Tech Stack
-* [JQuery CDN](http://code.jquery.com/)
-* [Normalize CSS](https://github.com/necolas/normalize.css/)
-* [Google Fonts](https://fonts.google.com)
+* [JQuery CDN](http://code.jquery.com/) to enable the slide out content
+* [Normalize CSS](https://github.com/necolas/normalize.css/) as the industry standard for resetting browser default styles to create a clean slate to work with
+* [Google Fonts](https://fonts.google.com) for main paragraph text 
 * Social Media Icons from [Font Awesome](https://fontawesome.com)
-* Used [Giphy Capture](https://giphy.com/apps/giphycapture) for screencaptures of applications running 
+* Used [Giphy Capture](https://giphy.com/apps/giphycapture) for screencaptures of applications running
+* [Full Page Screen Capture Chrome browser extension](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl/related?hl=en) for capturing screenshots of the website at different screen resolutions. 
 
 ## Design Process
 
@@ -50,15 +53,6 @@ My research took me to
 A number of websites had particularly inspired the design aesthetic
 * 
 
-
-
-## Wireframes
-
-![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
-
-* [Desktop Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
-* [Tablet Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_tablet.jpg)
-* [Mobile Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_mobile.jpg)
 
 ## Usability considerations
 <img src="https://github.com/rachelwong/portfolio/blob/master/img/Screen%20Shot%202019-03-24%20at%208.52.22%20am.png" width="400" align="center" alt="larene twitter conversation" />
@@ -108,9 +102,26 @@ From there, I built up a rudimentary [Moodzer moodboard](https://moodzer.com/boa
 
 ### Prototyping and troubleshooting (Day 3 - 4)
 
+#### Wireframes
+
+![alt_text](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
+
+* [Desktop Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe1.jpg)
+* [Tablet Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_tablet.jpg)
+* [Mobile Wireframe](https://github.com/rachelwong/portfolio/blob/master/img/wireframe_mobile.jpg)
+
+
 After two days of planning, I started to build a prototype to see how close I am able to build the website according to the initial wireframes. I also built separate pages testing out different javascript features such as multiple image sliders on the same page. 
 
 Project documentation was written in parallel with the prototyping and final build process.  
+
+#### Prototyping in working HTML5 and CSS3
+
+<img src="https://github.com/rachelwong/portfolio/blob/master/img/proto_screenshot_desktop.png" width="600" alt="Prototype desktop screenshot">
+
+* [Desktop Prototype](https://github.com/rachelwong/portfolio/blob/master/img/proto_screenshot_desktop.png)
+* [Tablet Prototype](https://github.com/rachelwong/portfolio/blob/master/img/proto_screenshot_tablet.png)
+* [Mobile Prototype](https://github.com/rachelwong/portfolio/blob/master/img/proto_screenshot_mobile.png)
 
 ### Final Build and testing (Day 5 - 6)
 
