@@ -1,6 +1,6 @@
 $beige: #f4efde;
 
-@font-face{
+@font-face {
   font-family: "CircularStd-Bold";
   src: url('./fonts/circularStd-Bold.woff') format('woff');
 }
@@ -13,15 +13,16 @@ $beige: #f4efde;
   text-align: center;
 }
 
-@mixin popover-base{
-  z-index:10;
+@mixin popover-base {
+  z-index: 10;
   pointer-events: none;
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Base Reset */
-* {box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -42,28 +43,36 @@ nav {
   border: 4px solid black;
   font-family: "CircularStd-Bold";
 }
+
 section {
   @include center;
 }
 
-h1, h2, h4, p, br{
-    padding:0 !important;
-    line-height: 2rem;
-    margin:0 !important;
-    font-family: "CircularStd-Bold";
+h1,
+h2,
+h4,
+p,
+br {
+  padding: 0 !important;
+  line-height: 2rem;
+  margin: 0 !important;
+  font-family: "CircularStd-Bold";
 }
 
 h4 {
   text-transform: uppercase;
   border-bottom: 3px solid black;
   letter-spacing: 1px;
-  font-size:1rem;
+  font-size: 1rem;
   font-family: "CircularStd-Bold";
 }
 
-p, ul, li{
+p,
+ul,
+li {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
 a,
 a:active,
 a:target,
@@ -93,7 +102,7 @@ nav ul li:hover {
   border-bottom: 3px solid black;
 }
 
-.container{
+.container {
   display: grid;
   background: $beige;
   margin: 0 auto;
@@ -106,46 +115,50 @@ section:hover {
   color: $beige;
   transition: 0.5s;
 }
-section:hover h1, 
-section:hover h2, 
-section:hover h2 a, 
-section:hover p a, 
-section.link:hover a i{
+
+section:hover h1,
+section:hover h2,
+section:hover h2 a,
+section:hover p a,
+section.link:hover a i {
   color: $beige;
 }
 
-section:hover h4{
+section:hover h4 {
   border-bottom: 3px solid $beige;
   transition: all 0.5s;
 }
 
-section:hover p a{text-decoration:underline;}
+section:hover p a {
+  text-decoration: underline;
+}
 
 img {
   position: absolute;
 }
 
-.home{
-  overflow:hidden;
+.home {
+  overflow: hidden;
 }
 
-.imgcontainer{
-  width:100%;
-  height:100%;
-  border:1px solid red;
-  overflow:hidden;
+.imgcontainer {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  overflow: hidden;
 }
-  img.homeimg{
-    position: fixed;
-    width: 100%;
-    object-fit: fixed;
-  }
 
-.home > h1 {
+img.homeimg {
+  position: fixed;
+  width: 100%;
+  object-fit: fixed;
+}
+
+.home>h1 {
   font-size: 3rem;
   line-height: 3rem;
   text-transform: uppercase;
-  letter-spacing:1px;
+  letter-spacing: 1px;
 }
 
 .slideshow {
@@ -155,55 +168,60 @@ img {
   color: black;
 }
 
-.home, .link{
+.home,
+.link {
   background: white;
 }
 
-.leftText, .leftText2{
+.leftText,
+.leftText2 {
   position: absolute;
   left: -1000px;
-  width:100%;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 }
 
-.rightText, .rightText2{
+.rightText,
+.rightText2 {
   position: absolute;
   right: -1000px;
   width: 100%;
   transition: all 0.5s ease-in-out;
 }
 
-.rightText.active, .rightText2.active{
-  right:0;
+.rightText.active,
+.rightText2.active {
+  right: 0;
   pointer-events: all;
-  position:absolute;
-  height:100%;
-  display:block;
-  background:black;
-  padding:10px;
-  color:$beige;
+  position: absolute;
+  height: 100%;
+  display: block;
+  background: black;
+  padding: 10px;
+  color: $beige;
   line-height: 1.2;
   overflow-y: scroll;
 }
 
-.leftText.active, .leftText2.active{
-    left:0;
-    pointer-events: all;
-    position:absolute;
-    height:100%;
-    display:block;
-    background:black;
-    padding:10px;
-    color: $beige;
-    line-height: 1.2;
-    overflow-y: scroll;
+.leftText.active,
+.leftText2.active {
+  left: 0;
+  pointer-events: all;
+  position: absolute;
+  height: 100%;
+  display: block;
+  background: black;
+  padding: 10px;
+  color: $beige;
+  line-height: 1.2;
+  overflow-y: scroll;
 }
 
-h2.meetupLink > a{
-  height:500px;
-  padding-top:200px;
-  line-height:6rem;
-  border-bottom:3px solid $beige;
+h2.meetupLink>a {
+  height: 500px;
+  padding-top: 200px;
+  line-height: 6rem;
+  border-bottom: 3px solid $beige;
 }
 
 .close {
@@ -214,10 +232,13 @@ h2.meetupLink > a{
   height: 32px;
   opacity: 0.3;
 }
+
 .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -234,78 +255,85 @@ h2.meetupLink > a{
   transform: rotate(-45deg);
 }
 
-.job h4:last-child{
-  text-decoration:none;
-  border:none;
+.job h4:last-child {
+  text-decoration: none;
+  border: none;
 }
 
 /* style the sliding content */
 
-.leftText, .leftText2, .rightText{
-  text-align:left;
+.leftText,
+.leftText2,
+.rightText {
+  text-align: left;
   font-family: 'Source Sans Pro', sans-serif;
 
 }
 
-.textwrapper{
-  width:100%;
-  padding:50px;
+.textwrapper {
+  width: 100%;
+  padding: 50px;
   font-family: 'Source Sans Pro', sans-serif;
 
 }
 
-.textwrapper h2 a{
+.textwrapper h2 a {
   font-family: "CircularStd-Bold";
 }
-.textwrapper p, .textwrapper a {
-  display:block;
+
+.textwrapper p,
+.textwrapper a {
+  display: block;
   font-family: 'Source Sans Pro', sans-serif;
   color: $beige;
 }
 
-.textwrapper ul li{
-  padding-top:10px;
-  list-style-type:square;
-  color:$beige;
-}
-
-.textwrapper ul li::before{
-  color:$beige;
-}
-
-.githubLink{
-  color: $beige;
-}
-
-.githubLink{
-  text-align:center;
-  padding:10px;
-  font-family: 'Source Sans Pro', sans-serif;
-  width:100%;
-  border:3px solid $beige;
-  transition: all 0.5s ease-in-out; 
-}
-
-.githubLink:hover{
-background: $beige;
-color:black;
-font-weight:800;
-}
-
-img#mentalDiary{
-  width:50%;
-
-}
-.textwrapper img{
-  display:inline-block;
-}
-.textwrapper ul li{
-  font-family: 'Source Sans Pro', sans-serif;
-  color: $beige;
-  display:block;
+.textwrapper ul li {
+  padding-top: 10px;
   list-style-type: square;
-  line-height:2rem;
+  color: $beige;
 }
+
+.textwrapper ul li::before {
+  color: $beige;
+}
+
+.githubLink {
+  color: $beige;
+}
+
+.githubLink {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  border: 3px solid $beige;
+  transition: all 0.5s ease-in-out;
+}
+
+.githubLink:hover {
+  background: $beige;
+  color: black;
+  font-weight: 800;
+}
+
+img#mentalDiary {
+  width: 50%;
+
+}
+
+.textwrapper img {
+  display: inline-block;
+}
+
+.textwrapper ul li {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $beige;
+  display: block;
+  list-style-type: square;
+  line-height: 2rem;
+}
+
 .clearfix {
   clear: both;
   visibility: hidden;
@@ -327,14 +355,14 @@ img#mentalDiary{
   .menu-toggle {
     display: none;
   }
-  
-  .popover-left{
+
+  .popover-left {
     grid-row: 2 / 8;
     grid-column: 1 / 3;
     @include popover-base;
   }
 
-  .popover-right{
+  .popover-right {
     grid-row: 2 / 8;
     grid-column: 3 / 7;
     @include popover-base;
@@ -357,7 +385,7 @@ img#mentalDiary{
     width: 60%;
   }
 
-  .home > h1 {
+  .home>h1 {
     font-size: 3rem;
     font-weight: 700;
   }
@@ -396,8 +424,8 @@ img#mentalDiary{
   .article {
     grid-row: 4 / 7;
     grid-column: 3 / 4;
-    padding:10px;
-    overflow:hidden;
+    padding: 10px;
+    overflow: hidden;
   }
 
   #app3 {
@@ -488,7 +516,7 @@ img#mentalDiary{
     cursor: pointer;
     padding-left: 20px;
     border: 4px solid black;
-    transition:0.5s ease-in;
+    transition: 0.5s ease-in;
   }
 
   nav {
@@ -496,16 +524,17 @@ img#mentalDiary{
   }
 
   nav.active {
-    border:4px solid black;
+    border: 4px solid black;
     display: block;
     position: absolute;
     width: 79.1%;
     background: $beige;
   }
+
   nav.active {
-      ul{
+    ul {
       display: block;
-      }
+    }
   }
 
   nav.active ul li {
@@ -522,29 +551,29 @@ img#mentalDiary{
     grid-column: 1 / 6;
   }
 
-  .popover-left{
+  .popover-left {
     grid-row: 2 / 4;
     grid-column: 1 / 6;
     @include popover-base;
   }
 
-  .popover-right{
+  .popover-right {
     grid-row: 5 / 10;
     grid-column: 1 / 6;
     @include popover-base;
   }
 
-  .home {    
+  .home {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     background-image: url('img/g_homebg2.jpg');
     background-size: cover;
-    padding:10px;
+    padding: 10px;
   }
 
-  .home h1{
-    font-size:4rem;
-    line-height:4rem;
+  .home h1 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 
   #app1 {
@@ -552,9 +581,9 @@ img#mentalDiary{
     grid-column: 2 / 6;
   }
 
-  #app1 h2 a{
-    font-size:2.6rem;
-    line-height:2.5rem;
+  #app1 h2 a {
+    font-size: 2.6rem;
+    line-height: 2.5rem;
   }
 
   #slide-left {
@@ -585,12 +614,13 @@ img#mentalDiary{
   .article {
     grid-row: 6 / 9;
     grid-column: 1 / 2;
-    padding:20px;
+    padding: 20px;
   }
 
-  .article p{
+  .article p {
     font-size: 1.4rem;
   }
+
   #app3 {
     grid-row: 6 / 7;
     grid-column: 2 / 6;
@@ -599,14 +629,18 @@ img#mentalDiary{
   .job {
     grid-row: 7 / 9;
     grid-column: 4 / 6;
-    padding:10px;
-    overflow:hidden;
+    padding: 10px;
+    overflow: hidden;
   }
 
-  section.link a i {transition: all .2s ease-in-out;}
-  section.link:hover a i{
+  section.link a i {
+    transition: all .2s ease-in-out;
+  }
+
+  section.link:hover a i {
     transform: scale(2);
   }
+
   .email {
     grid-row: 7 / 8;
     grid-column: 2 / 3;
@@ -653,8 +687,10 @@ img#mentalDiary{
   header {
     grid-row: 1 / 2;
     grid-column: 1 / 5;
+
     nav {
       height: 100%;
+
       ul {
         width: 100%;
         font-size: 10pt;
@@ -662,13 +698,13 @@ img#mentalDiary{
     }
   }
 
-  .popover-left{
+  .popover-left {
     grid-row: 2 / 4;
     grid-column: 1 / 5;
     @include popover-base;
   }
 
-  .popover-right{
+  .popover-right {
     grid-row: 7 / 11;
     grid-column: 1 / 5;
     @include popover-base;
@@ -679,20 +715,20 @@ img#mentalDiary{
     grid-column: 1 / 3;
   }
 
-  .home h1{
-    font-size:1.8rem;
-    line-height:2rem;
+  .home h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   .job {
     grid-row: 2 / 3;
     grid-column: 3 / 5;
-    padding:10px;
+    padding: 10px;
   }
 
-  .job h4{
-    font-size:1.5rem;
-    line-height:1.7em;
+  .job h4 {
+    font-size: 1.5rem;
+    line-height: 1.7em;
   }
 
   #app1 {
@@ -735,9 +771,11 @@ img#mentalDiary{
     grid-column: 1 / 5;
   }
 
-  section.link a i {transition: all .2s ease-in-out;}
-  
-  section.link:hover a i{
+  section.link a i {
+    transition: all .2s ease-in-out;
+  }
+
+  section.link:hover a i {
     transform: scale(1.8);
   }
 

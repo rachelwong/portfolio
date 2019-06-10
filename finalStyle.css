@@ -49,7 +49,11 @@ section {
   text-align: center;
 }
 
-h1, h2, h4, p, br {
+h1,
+h2,
+h4,
+p,
+br {
   padding: 0 !important;
   line-height: 2rem;
   margin: 0 !important;
@@ -64,7 +68,9 @@ h4 {
   font-family: "CircularStd-Bold";
 }
 
-p, ul, li {
+p,
+ul,
+li {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -173,11 +179,13 @@ img.homeimg {
   color: black;
 }
 
-.home, .link {
+.home,
+.link {
   background: white;
 }
 
-.leftText, .leftText2 {
+.leftText,
+.leftText2 {
   position: absolute;
   left: -1000px;
   width: 100%;
@@ -185,7 +193,8 @@ img.homeimg {
   transition: all 0.5s ease-in-out;
 }
 
-.rightText, .rightText2 {
+.rightText,
+.rightText2 {
   position: absolute;
   right: -1000px;
   width: 100%;
@@ -193,7 +202,8 @@ img.homeimg {
   transition: all 0.5s ease-in-out;
 }
 
-.rightText.active, .rightText2.active {
+.rightText.active,
+.rightText2.active {
   right: 0;
   pointer-events: all;
   position: absolute;
@@ -206,7 +216,8 @@ img.homeimg {
   overflow-y: scroll;
 }
 
-.leftText.active, .leftText2.active {
+.leftText.active,
+.leftText2.active {
   left: 0;
   pointer-events: all;
   position: absolute;
@@ -239,7 +250,8 @@ h2.meetupLink > a {
   opacity: 1;
 }
 
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -264,7 +276,9 @@ h2.meetupLink > a {
 }
 
 /* style the sliding content */
-.leftText, .leftText2, .rightText {
+.leftText,
+.leftText2,
+.rightText {
   text-align: left;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -279,7 +293,8 @@ h2.meetupLink > a {
   font-family: "CircularStd-Bold";
 }
 
-.textwrapper p, .textwrapper a {
+.textwrapper p,
+.textwrapper a {
   display: block;
   font-family: 'Source Sans Pro', sans-serif;
   color: #f4efde;
